@@ -2401,6 +2401,134 @@ namespace AnglicanDailyReading.Data
                         "Jonah 2",
                         "Matthew 3"
                     },
+                    new List<string> //9/1
+                    {
+                        "Psalm 1-2",
+                        "2 Samuel 19",
+                        "Ephesians 1:15-23",
+                        "Psalm 3-4",
+                        "Jonah 3",
+                        "Matthew 4"
+                    },
+                    new List<string> //9/2
+                    {
+                        "Psalm 5-6",
+                        "2 Samuel 20",
+                        "Ephesians 2:1-10",
+                        "Psalm 7",
+                        "Jonah 4",
+                        "Matthew 5:1-20"
+                    },
+                    new List<string> //9/3
+                    {
+                        "Psalm 9",
+                        "2 Samuel 21",
+                        "Ephesians 2:11-22",
+                        "Psalm 10",
+                        "Micah 1",
+                        "Matthew 5:21-48"
+                    },
+                    new List<string> //9/4
+                    {
+                        "Psalm 8",
+                        "Psalm 11",
+                        "2 Samuel 22",
+                        "Ephesians 3",
+                        "Psalm 15-16",
+                        "Micah 2",
+                        "Matthew 6:1-18"
+                    },
+                    new List<string> //9/5
+                    {
+                        "Psalm 12-14",
+                        "2 Samuel 23",
+                        "Ephesians 4:1-16",
+                        "Psalm 17",
+                        "Micah 3",
+                        "Matthew 6:19-34"
+                    },
+                    new List<string> //9/6
+                    {
+                        "Psalm 18:1-20",
+                        "2 Samuel 24",
+                        "Ephesians 4:17-32",
+                        "Psalm 18:21-52",
+                        "Micah 4",
+                        "Matthew 7"
+                    },
+                    new List<string> //9/7
+                    {
+                        "Psalm 19",
+                        "1 Chronicles 22",
+                        "Ephesians 5:1-17",
+                        "Psalm 20-21",
+                        "Micah 5",
+                        "Matthew 8:1-17"
+                    },
+                    new List<string> //9/8
+                    {
+                        "Psalm 22",
+                        "1 Kings 1",
+                        "Ephesians 5:18-33",
+                        "Psalm 23-24",
+                        "Micah 6",
+                        "Matthew 8:18-34"
+                    },
+                    new List<string> //9/9
+                    {
+                        "Psalm 25",
+                        "1 Chronicles 28",
+                        "Ephesians 6",
+                        "Psalm 27",
+                        "Micah 7",
+                        "Matthew 9:1-17"
+                    },
+                    new List<string> //9/10
+                    {
+                        "Psalm 26",
+                        "Psalm 28",
+                        "1 Kings 2",
+                        "Hebrews 1",
+                        "Psalm 31",
+                        "Nahum 1",
+                        "Matthew 9:18-34"
+                    },
+                    new List<string> //9/11
+                    {
+                        "Psalm 29-30",
+                        "1 Kings 3",
+                        "Hebrews 2",
+                        "Psalm 33",
+                        "Nahum 2",
+                        "Matthew 9:35-10:23"
+                    },
+                    new List<string> //9/12
+                    {
+                        "Psalm 34",
+                        "1 Kings 4",
+                        "Hebrews 3",
+                        "Psalm 35",
+                        "Nahum 3",
+                        "Matthew 10:24-42"
+                    },
+                    new List<string> //9/13
+                    {
+                        "Psalm 32",
+                        "Psalm 36",
+                        "1 Kings 5",
+                        "Hebrews 4:1-13",
+                        "Psalm 38",
+                        "Habakkuk 1",
+                        "Matthew 11"
+                    },
+                    new List<string> //9/14
+                    {
+                        "Psalm 37:1-17",
+                        "Hebrews 4:14-5:10",
+                        "John 12:23-33",
+                        "Psalm 37:18-41",
+                        "Habakkuk 2",
+                        "Matthew 12:1-21"                    },
                 };
             }
         }
