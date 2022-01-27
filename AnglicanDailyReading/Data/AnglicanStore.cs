@@ -2,7 +2,7 @@
 
 namespace AnglicanDailyReading.Data
 {
-    public static class Store
+    public static class AnglicanStore
     {
         public static List<List<string>> AshWednessday
         {
@@ -2000,15 +2000,6 @@ namespace AnglicanDailyReading.Data
                         "Ezra 7",
                         "2 Timothy 2"
                     },
-                    new List<string> //7/19
-                    {
-                        "Psalm 47-48",
-                        "1 Samuel 10",
-                        "2 Corinthians 1:1-2:11",
-                        "Psalm 49",
-                        "Ezra 7",
-                        "2 Timothy 2"
-                    },
                     new List<string> //7/20
                     {
                         "Psalm 50",
@@ -3033,6 +3024,496 @@ namespace AnglicanDailyReading.Data
                         "Isaiah 21",
                         "Mark 14:26-52"
                     },
+                    new List<string> //11/9
+                    {
+                        "Psalm 25",
+                        "2 Kings 22",
+                        "Acts 12:25-13:12",
+                        "Psalm 27",
+                        "Isaiah 22",
+                        "Mark 14:53-72"
+                    },
+                    new List<string> //11/10
+                    {
+                        "Psalm 26",
+                        "Psalm 28",
+                        "2 Kings 23",
+                        "Acts 13:13-43",
+                        "Psalm 31",
+                        "Isaiah 23",
+                        "Mark 15"
+                    },
+                    new List<string> //11/11
+                    {
+                        "Psalm 29-30",
+                        "2 Kings 24",
+                        "Acts 13:44-14:7",
+                        "Psalm 33",
+                        "Isaiah 24",
+                        "Mark 16"
+                    },
+                    new List<string> //11/12
+                    {
+                        "Psalm 34",
+                        "2 Kings 25",
+                        "Acts 14:8-28",
+                        "Psalm 35",
+                        "Isaiah 25",
+                        "Luke 1:1-23"
+                    },
+                    new List<string> //11/13
+                    {
+                        "Psalm 32",
+                        "Psalm 36",
+                        "Judith 4",
+                        "Acts 15:1-21",
+                        "Psalm 38",
+                        "Isaiah 26",
+                        "Luke 1:24-56"
+                    },
+                    new List<string> //11/14
+                    {
+                        "Psalm 37:1-17",
+                        "Judith 8",
+                        "Acts 15:22-35",
+                        "Psalm 37:18-41",
+                        "Isaiah 27",
+                        "Luke 1:57-80"
+                    },
+                    new List<string> //11/15
+                    {
+                        "Psalm 40",
+                        "Judith 9",
+                        "Acts 15:36-16:5",
+                        "Psalm 39",
+                        "Psalm 41",
+                        "Isaiah 28",
+                        "Luke 2:1-21"
+                    },
+                    new List<string> //11/16
+                    {
+                        "Psalm 42-43",
+                        "Judith 10",
+                        "Acts 16:6-40",
+                        "Psalm 44",
+                        "Isaiah 29",
+                        "Luke 2:22-52"
+                    },
+                    new List<string> //11/17
+                    {
+                        "Psalm 45",
+                        "Judith 11",
+                        "Acts 17:1-15",
+                        "Psalm 46",
+                        "Isaiah 30",
+                        "Luke 3:1-22"
+                    },
+                    new List<string> //11/18
+                    {
+                        "Psalm 47-48",
+                        "Judith 12",
+                        "Acts 17:16-34",
+                        "Psalm 49",
+                        "Isaiah 31",
+                        "Luke 3:23-38"
+                    },
+                    new List<string> //11/19
+                    {
+                        "Psalm 50",
+                        "Judith 13",
+                        "Acts 18:1-23",
+                        "Psalm 51",
+                        "Isaiah 32",
+                        "Luke 4:1-30"
+                    },
+                    new List<string> //11/20
+                    {
+                        "Psalm 52-54",
+                        "Judith 14",
+                        "Acts 18:24-19:7",
+                        "Psalm 55",
+                        "Isaiah 33",
+                        "Luke 4:31-44"
+                    },
+                    new List<string> //11/21
+                    {
+                        "Psalm 56-57",
+                        "Judith 15",
+                        "Acts 19:8-20",
+                        "Psalm 58",
+                        "Psalm 60",
+                        "Isaiah 34",
+                        "Luke 5:1-16"
+                    },
+                    new List<string> //11/22
+                    {
+                        "Psalm 59",
+                        "Judith 16",
+                        "Acts 19:21-41",
+                        "Psalm 63-64",
+                        "Isaiah 35",
+                        "Luke 5:17-39"
+                    },
+                    new List<string> //11/23
+                    {
+                        "Psalm 61-62",
+                        "Sirach 1",
+                        "Acts 20:1-16",
+                        "Psalm 65",
+                        "Psalm 67",
+                        "Isaiah 36",
+                        "Luke 6:1-19"
+                    },
+                    new List<string> //11/24
+                    {
+                        "Psalm 68:1-18",
+                        "Sirach 2",
+                        "Acts 20:17-38",
+                        "Psalm 68:19-36",
+                        "Isaiah 37",
+                        "Luke 6:20-38"
+                    },
+                    new List<string> //11/25
+                    {
+                        "Psalm 69:1-18",
+                        "Sirach 4",
+                        "Acts 21:1-16",
+                        "Psalm 69:19-37",
+                        "Isaiah 38",
+                        "Luke 6:39-7:10"
+                    },
+                    new List<string> //11/26
+                    {
+                        "Psalm 66",
+                        "Sirach 6",
+                        "Acts 21:17-36",
+                        "Psalm 70",
+                        "Psalm 72",
+                        "Isaiah 39",
+                        "Luke 7:11-35"
+                    },
+                    new List<string> //11/27
+                    {
+                        "Psalm 71",
+                        "Sirach 7",
+                        "Acts 21:37-22:22",
+                        "Psalm 73",
+                        "Isaiah 40",
+                        "Luke 7:36-50"
+                    },
+                    new List<string> //11/28
+                    {
+                        "Psalm 74",
+                        "Sirach 9",
+                        "Acts 22:23-23:11",
+                        "Psalm 77",
+                        "Isaiah 41",
+                        "Luke 8:1-21"
+                    },
+                    new List<string> //11/29
+                    {
+                        "Psalm 75-76",
+                        "Sirach 10",
+                        "Acts 23:12-35",
+                        "Psalm 79",
+                        "Psalm 82",
+                        "Isaiah 42",
+                        "Luke 8:22-56"
+                    },
+                    new List<string> //11/30
+                    {
+                        "Psalm 78:1-18",
+                        "Sirach 11",
+                        "John 1:35-42",
+                        "Psalm 78:19-40",
+                        "Isaiah 43",
+                        "Luke 9:1-17"
+                    },
+                    new List<string> //12/1
+                    {
+                        "Psalm 78:41-73",
+                        "Sirach 14",
+                        "Acts 24:1-23",
+                        "Psalm 80",
+                        "Isaiah 44",
+                        "Luke 9:18-50"
+                    },
+                    new List<string> //12/2
+                    {
+                        "Psalm 81",
+                        "Sirach 17",
+                        "Acts 24:24-25:12",
+                        "Psalm 83",
+                        "Isaiah 45",
+                        "Luke 9:51-62"
+                    },
+                    new List<string> //12/3
+                    {
+                        "Psalm 84",
+                        "Sirach 18",
+                        "Acts 25:13-27",
+                        "Psalm 85",
+                        "Isaiah 46",
+                        "Luke 10:1-24"
+                    },
+                    new List<string> //12/4
+                    {
+                        "Psalm 86-87",
+                        "Sirach 21",
+                        "Acts 26",
+                        "Psalm 88",
+                        "Isaiah 47",
+                        "Luke 10:25-42"
+                    },
+                    new List<string> //12/5
+                    {
+                        "Psalm 89:1-18",
+                        "Sirach 34",
+                        "Acts 27",
+                        "Psalm 89:19-51",
+                        "Isaiah 48",
+                        "Luke 11:1-28"
+                    },
+                    new List<string> //12/6
+                    {
+                        "Psalm 90",
+                        "Sirach 38",
+                        "Acts 28:1-15",
+                        "Psalm 91",
+                        "Isaiah 49",
+                        "Luke 11:29-54"
+                    },
+                    new List<string> //12/7
+                    {
+                        "Psalm 92-93",
+                        "Sirach 39",
+                        "Acts 28:16-31",
+                        "Psalm 94",
+                        "Isaiah 50",
+                        "Luke 12:1-34"
+                    },
+                    new List<string> //12/8
+                    {
+                        "Psalm 95-96",
+                        "Sirach 44",
+                        "Revelation 1",
+                        "Psalm 97-98",
+                        "Isaiah 51",
+                        "Luke 12:35-53"
+                    },
+                    new List<string> //12/9
+                    {
+                        "Psalm 99-101",
+                        "Sirach 45",
+                        "Revelation 2:1-17",
+                        "Psalm 102",
+                        "Isaiah 52",
+                        "Luke 12:54-13:9"
+                    },
+                    new List<string> //12/10
+                    {
+                        "Psalm 103",
+                        "Sirach 46",
+                        "Revelation 2:18-3:6",
+                        "Psalm 104",
+                        "Isaiah 53",
+                        "Luke 13:10-35"
+                    },
+                    new List<string> //12/11
+                    {
+                        "Psalm 105:1-22",
+                        "Sirach 47",
+                        "Revelation 3:7-22",
+                        "Psalm 105:23-44",
+                        "Isaiah 54",
+                        "Luke 14:1-24"
+                    },
+                    new List<string> //12/12
+                    {
+                        "Psalm 106:1-18",
+                        "Sirach 48",
+                        "Revelation 4",
+                        "Psalm 106:19-46",
+                        "Isaiah 55",
+                        "Luke 14:25-15:10"
+                    },
+                    new List<string> //12/13
+                    {
+                        "Psalm 107:1-22",
+                        "Sirach 49",
+                        "Revelation 5",
+                        "Psalm 107:23-43",
+                        "Isaiah 56",
+                        "Luke 15:11-32"
+                    },
+                    new List<string> //12/14
+                    {
+                        "Psalm 108",
+                        "Psalm 110",
+                        "Sirach 50",
+                        "Revelation 6",
+                        "Psalm 109",
+                        "Isaiah 57",
+                        "Luke 16"
+                    },
+                    new List<string> //12/15
+                    {
+                        "Psalm 111-112",
+                        "Sirach 51",
+                        "Revelation 7",
+                        "Psalm 113-114",
+                        "Isaiah 58",
+                        "Luke 17:1-19"
+                    },
+                    new List<string> //12/16
+                    {
+                        "Psalm 115",
+                        "Wisdom 1",
+                        "Revelation 8",
+                        "Psalm 116-117",
+                        "Isaiah 59",
+                        "Luke 17:20-37"
+                    },
+                    new List<string> //12/17
+                    {
+                        "Psalm 119:1-24",
+                        "Wisdom 2",
+                        "Revelation 9",
+                        "Psalm 119:25-48",
+                        "Isaiah 60",
+                        "Luke 18:1-30"
+                    },
+                    new List<string> //12/18
+                    {
+                        "Psalm 119:49-72",
+                        "Wisdom 3",
+                        "Revelation 10",
+                        "Psalm 119:73-88",
+                        "Isaiah 61",
+                        "Luke 18:31-19:10"
+                    },
+                    new List<string> //12/19
+                    {
+                        "Psalm 119:89-104",
+                        "Wisdom 4",
+                        "Revelation 11",
+                        "Psalm 119:105-128",
+                        "Isaiah 62",
+                        "Luke 19:11-28"
+                    },
+                    new List<string> //12/20
+                    {
+                        "Psalm 119:129-152",
+                        "Wisdom 5",
+                        "Revelation 12",
+                        "Psalm 119:153-176",
+                        "Isaiah 63",
+                        "Luke 19:29-48"
+                    },
+                    new List<string> //12/21
+                    {
+                        "Psalm 118",
+                        "Revelation 13",
+                        "John 14:1-7",
+                        "Psalm 120-121",
+                        "Isaiah 64",
+                        "Luke 20:1-26"
+                    },
+                    new List<string> //12/22
+                    {
+                        "Psalm 122-123",
+                        "Wisdon 6",
+                        "Revelation 14",
+                        "Psalm 124-126",
+                        "Isaiah 65",
+                        "Luke 20:27-21:4"
+                    },
+                    new List<string> //12/23
+                    {
+                        "Psalm 127-128",
+                        "Wisdon 7",
+                        "Revelation 15",
+                        "Psalm 129-131",
+                        "Isaiah 66",
+                        "Luke 21:5-38"
+                    },
+                    new List<string> //12/24
+                    {
+                        "Psalm 132-133",
+                        "Wisdon 8",
+                        "Revelation 16",
+                        "Psalm 134-135",
+                        "Song 1",
+                        "Luke 22:1-38"
+                    },
+                    new List<string> //12/25
+                    {
+                        "Psalm 19",
+                        "Psalm 45",
+                        "Isaiah 9:1-7",
+                        "Revelation 17",
+                        "Psalm 85",
+                        "Psalm 110",
+                        "Song 2",
+                        "Luke 2:1-14"
+                    },
+                    new List<string> //12/26
+                    {
+                        "Psalm 136",
+                        "Acts 6:8-15",
+                        "Acts 7:6",
+                        "Acts 7:17-41",
+                        "Acts 7:44-60",
+                        "Revelation 18",
+                        "Psalm 137-138",
+                        "Song 3",
+                        "Luke 22:39-53"
+                    },
+                    new List<string> //12/27
+                    {
+                        "Psalm 139",
+                        "Revelation 19",
+                        "1 John 1",
+                        "Psalm 141-142",
+                        "Song 4",
+                        "Luke 22:54-71"
+                    },
+                    new List<string> //12/28
+                    {
+                        "Psalm 140",
+                        "Jeremiah 31:1-17",
+                        "Revelation 19",
+                        "Psalm 143",
+                        "Song 5",
+                        "Luke 23:1-25"
+                    },
+                    new List<string> //12/29
+                    {
+                        "Psalm 144",
+                        "Wisdom 5",
+                        "Revelation 21:1-14",
+                        "Psalm 145",
+                        "Song 6",
+                        "Luke 23:26-49"
+                    },
+                    new List<string> //12/30
+                    {
+                        "Psalm 146",
+                        "Wisdom 10",
+                        "Revelation 21:15-22:5",
+                        "Psalm 147",
+                        "Song 7",
+                        "Luke 23:50-24:12"
+                    },
+                    new List<string> //12/31
+                    {
+                        "Psalm 148",
+                        "Wisdom 11",
+                        "Revelation 22:6-21",
+                        "Psalm 149-150",
+                        "Song 8",
+                        "Luke 24:13-53"
+                    }
                 };
             }
         }

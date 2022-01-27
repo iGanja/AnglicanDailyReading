@@ -24,7 +24,7 @@ namespace AnglicanDailyReading.Controllers
         public ContentResult Office()
         {
             readingPlan.Passages.AddRange(
-                Data.Store.Office
+                Data.AnglicanStore.Office
             );
 
             XmlWriterSettings settings = new()
@@ -83,7 +83,7 @@ namespace AnglicanDailyReading.Controllers
         public ContentResult Psalter()
         {
             readingPlan.Passages.AddRange(
-                Data.Store.Office
+                Data.AnglicanStore.Office
             );
 
             XmlWriterSettings settings = new()
