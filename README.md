@@ -18,4 +18,5 @@ The service outputs in <xml> in the following format to meet the SubSplash speci
 This service was created using .NET Core 6.0 and is set to publish to an IIS server, but it could just as easily be set to deploy to a container and hosted on any cloud-based service.
 
 In Service to our Savior Jesus Chirst who is seated at the right hand of the Father,
+
 David Moore (D2)
