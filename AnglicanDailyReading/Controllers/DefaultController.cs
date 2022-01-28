@@ -2,6 +2,9 @@
 using AnglicanDailyReading.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Xml;
 
@@ -13,6 +16,30 @@ namespace AnglicanDailyReading.Controllers
     {
         private readonly ReadingPlan readingPlan = new();
         private readonly ILogger<DefaultController> _logger;
+        private static DateTime Today
+        {
+            get
+            {
+                return DateTime.Today;
+            }
+        }
+        private static HolyDays HolyDays
+        {
+            get
+            {
+                return Data.AnglicanStore.HolyDays.First(d => d.Year == Today.Year);
+            }
+        }
+        private static int[] Days
+        {
+            get
+            {
+                return new int[] {HolyDays.AshWednesday.DayOfYear,
+                HolyDays.MaundyThursday.DayOfYear, HolyDays.GoodFriday.DayOfYear,
+                HolyDays.HolySaturday.DayOfYear, HolyDays.EasterSunday.DayOfYear,
+                HolyDays.Ascension.DayOfYear, HolyDays.Pentecost.DayOfYear};
+            }
+        }
 
         public DefaultController(ILogger<DefaultController> logger)
         {
@@ -52,6 +79,12 @@ namespace AnglicanDailyReading.Controllers
                         writer.WriteStartElement("day");
                         writer.WriteValue(i);
                         writer.WriteEndElement();
+
+                        if (Days.Contains(i))
+                        {
+                            x = GetHolyDay(i) ?? x;
+                        }
+
                         x.ForEach(y =>
                         {
                             writer.WriteStartElement("passage");
@@ -75,7 +108,6 @@ namespace AnglicanDailyReading.Controllers
                 ContentType = "application/xml",
                 StatusCode = 200
             };
-
         }
 
         [HttpGet]
@@ -105,12 +137,18 @@ namespace AnglicanDailyReading.Controllers
                     writer.WriteValue("Anglican 60 Day Psalter");
                     writer.WriteEndElement();
                     int i = 1;
-                    foreach(var x in readingPlan.Passages)
+                    readingPlan.Passages.ForEach(x =>
                     {
                         writer.WriteStartElement("reading");
                         writer.WriteStartElement("day");
                         writer.WriteValue(i);
                         writer.WriteEndElement();
+
+                        if (Days.Contains(i))
+                        {
+                            x = GetHolyDay(i) ?? x;
+                        }
+
                         x.ForEach(y =>
                         {
                             if (y.Contains("Psalm"))
@@ -122,7 +160,7 @@ namespace AnglicanDailyReading.Controllers
                         });
                         writer.WriteEndElement();
                         i++;
-                    };
+                    });
 
                     writer.WriteEndElement();
                     //writer.WriteEndDocument();
@@ -137,7 +175,25 @@ namespace AnglicanDailyReading.Controllers
                 ContentType = "application/xml",
                 StatusCode = 200
             };
+        }
 
+        private static List<string> GetHolyDay(int day)
+        {
+            if (day == HolyDays.AshWednesday.DayOfYear)
+                return Data.AnglicanStore.AshWednesday;
+            else if (day == HolyDays.MaundyThursday.DayOfYear)
+                return Data.AnglicanStore.MaundyThursday;
+            else if (day == HolyDays.GoodFriday.DayOfYear)
+                return Data.AnglicanStore.GoodFriday;
+            else if (day == HolyDays.HolySaturday.DayOfYear)
+                return Data.AnglicanStore.HolySaturday;
+            else if (day == HolyDays.EasterSunday.DayOfYear)
+                return Data.AnglicanStore.EasterSunday;
+            else if (day == HolyDays.Ascension.DayOfYear)
+                return Data.AnglicanStore.Ascension;
+            else if (day == HolyDays.Pentecost.DayOfYear)
+                return Data.AnglicanStore.Pentecost;
+            else return null;
         }
     }
 }

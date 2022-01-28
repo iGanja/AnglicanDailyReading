@@ -1,160 +1,225 @@
-﻿using System.Collections.Generic;
+﻿using AnglicanDailyReading.Models;
+using System;
+using System.Collections.Generic;
 
 namespace AnglicanDailyReading.Data
 {
     public static class AnglicanStore
     {
-        public static List<List<string>> AshWednessday
+        public static List<string> February29
         {
             get
             {
-                return new List<List<string>>
+                return new List<string>
                 {
-                    new List<string>
-                    {
-                        "Psalm 38",
-                        "Isaiah 58:1-12",
-                        "Luke 18:9-14",
-                        "Psalm 6",
-                        "Psalm 32",
-                        "Jonah 3",
-                        "1 Corinthians 9:24-27"
-                    }
+                    "Psalm 90",
+                    "2 Kings 2",
+                    "Luke 24:44-53",
+                    "Psalm 104",
+                    "Joel 2",
+                    "2 Peter 3"
                 };
             }
         }
 
-        public static List<List<string>> February29
+        public static List<string> AshWednesday
         {
             get
             {
-                return new List<List<string>>
+                return new List<string>
                 {
-                    new List<string>
-                    {
-                        "Psalm 90",
-                        "2 Kings 2",
-                        "Luke 24:44-53",
-                        "Psalm 104",
-                        "Joel 2",
-                        "2 Peter 3"
-                    }
+                    "Psalm 38",
+                    "Isaiah 58:1-12",
+                    "Luke 18:9-14",
+                    "Psalm 6",
+                    "Psalm 32",
+                    "Jonah 3",
+                    "1 Corinthians 9:24-27"
                 };
             }
         }
 
-        public static List<List<string>> MaundyThursday
+        public static List<string> MaundyThursday
         {
             get
             {
-                return new List<List<string>>
+                return new List<string>
                 {
-                    new List<string>
-                    {
-                        "Psalm 41",
-                        "Daniel 9",
-                        "John 13:1-20",
-                        "Psalm 142-143",
-                        "1 Corinthians 10:1-22",
-                        "John 13:1-20"
-                    }
+                    "Psalm 41",
+                    "Daniel 9",
+                    "John 13:1-20",
+                    "Psalm 142-143",
+                    "1 Corinthians 10:1-22",
+                    "John 13:1-20"
                 };
             }
         }
 
-        public static List<List<string>> GoodFriday
+        public static List<string> GoodFriday
         {
             get
             {
-                return new List<List<string>>
+                return new List<string>
                 {
-                    new List<string>
-                    {
-                        "Psalm 40",
-                        "Lamentations 3:1-36",
-                        "John 18",
-                        "Psalm 102",
-                        "1 Peter 2:11-25",
-                        "Luke 23:18-49"
-                    }
+                    "Psalm 40",
+                    "Lamentations 3:1-36",
+                    "John 18",
+                    "Psalm 102",
+                    "1 Peter 2:11-25",
+                    "Luke 23:18-49"
                 };
             }
         }
 
-        public static List<List<string>> HolySaturday
+        public static List<string> HolySaturday
         {
             get
             {
-                return new List<List<string>>
+                return new List<string>
                 {
-                    new List<string>
-                    {
-                        "Psalm 88",
-                        "Lamentations 3:37-58",
-                        "Hebrews 4",
-                        "Psalm 91",
-                        "1 Peter 4:1-8",
-                        "Luke 23:50-56"
-                    }
+                    "Psalm 88",
+                    "Lamentations 3:37-58",
+                    "Hebrews 4",
+                    "Psalm 91",
+                    "1 Peter 4:1-8",
+                    "Luke 23:50-56"
                 };
             }
         }
 
-        public static List<List<string>> Easter
+        public static List<string> EasterSunday
         {
             get
             {
-                return new List<List<string>>
+                return new List<string>
                 {
-                    new List<string>
-                    {
-                        "Psalm 118",
-                        "Exodus 15",
-                        "Acts 2:22-32",
-                        "Psalm 111-114",
-                        "Romans 6",
-                        "Luke 24:13-43"
-                    }
+                    "Psalm 118",
+                    "Exodus 15",
+                    "Acts 2:22-32",
+                    "Psalm 111-114",
+                    "Romans 6",
+                    "Luke 24:13-43"
                 };
             }
         }
 
-        public static List<List<string>> Ascension
+        public static List<string> Ascension
         {
             get
             {
-                return new List<List<string>>
+                return new List<string>
                 {
-                    new List<string>
-                    {
-                        "Psalm 8",
-                        "Psalm 47",
-                        "2 Kings 2",
-                        "Ephensians 4:1-17",
-                        "Psalm 21",
-                        "Psalm 24",
-                        "Hebrews 8",
-                        "Luke 24:44-53"
-                    }
+                    "Psalm 8",
+                    "Psalm 47",
+                    "2 Kings 2",
+                    "Ephensians 4:1-17",
+                    "Psalm 21",
+                    "Psalm 24",
+                    "Hebrews 8",
+                    "Luke 24:44-53"
                 };
             }
         }
 
-        public static List<List<string>> Pentecost
+        public static List<string> Pentecost
         {
             get
             {
-                return new List<List<string>>
+                return new List<string>
                 {
-                    new List<string>
+                    "Psalm 48",
+                    "Isiah 11",
+                    "John 16:1-15",
+                    "Psalm 145",
+                    "Acts 2",
+                    "Acts 10:34-48"
+                };
+            }
+        }
+
+        public static List<HolyDays> HolyDays
+        {
+            get
+            {
+                return new List<HolyDays>
+                {
+                    new HolyDays
                     {
-                        "Psalm 48",
-                        "Isiah 11",
-                        "John 16:1-15",
-                        "Psalm 145",
-                        "Acts 2",
-                        "Acts 10:34-48"
-                    }
+                        Year = 2022,
+                        AshWednesday = new DateOnly(2022, 3, 2),
+                        EasterSunday = new DateOnly(2022, 4, 17),
+                        HolySaturday = new DateOnly(2022, 4, 16),
+                        GoodFriday = new DateOnly(2022, 4, 15),
+                        MaundyThursday = new DateOnly(2022, 4, 14),
+                        Ascension = new DateOnly(2022, 5, 26),
+                        Pentecost = new DateOnly(2022, 6, 5)
+                    },
+                    new HolyDays
+                    {
+                        Year = 2023,
+                        AshWednesday = new DateOnly(2023, 2, 22),
+                        EasterSunday = new DateOnly(2023, 4, 9),
+                        HolySaturday = new DateOnly(2023, 4, 8),
+                        GoodFriday = new DateOnly(2023, 4, 7),
+                        MaundyThursday = new DateOnly(2023, 4, 6),
+                        Ascension = new DateOnly(2023, 5, 18),
+                        Pentecost = new DateOnly(2023, 5, 28)
+                    },
+                    new HolyDays
+                    {
+                        Year = 2024,
+                        AshWednesday = new DateOnly(2023, 2, 14),
+                        EasterSunday = new DateOnly(2023, 3, 31),
+                        HolySaturday = new DateOnly(2023, 4, 30),
+                        GoodFriday = new DateOnly(2023, 4, 29),
+                        MaundyThursday = new DateOnly(2023, 4, 28),
+                        Ascension = new DateOnly(2023, 5, 10),
+                        Pentecost = new DateOnly(2023, 5, 20)
+                    },
+                    new HolyDays
+                    {
+                        Year = 2025,
+                        AshWednesday = new DateOnly(2025, 3, 5),
+                        EasterSunday = new DateOnly(2025, 4, 20),
+                        HolySaturday = new DateOnly(2025, 4, 19),
+                        GoodFriday = new DateOnly(2025, 4, 18),
+                        MaundyThursday = new DateOnly(2025, 4, 17),
+                        Ascension = new DateOnly(2025, 5, 29),
+                        Pentecost = new DateOnly(2025, 6, 8)
+                    },
+                    new HolyDays
+                    {
+                        Year = 2026,
+                        AshWednesday = new DateOnly(2026, 2, 18),
+                        EasterSunday = new DateOnly(2026, 4, 5),
+                        HolySaturday = new DateOnly(2026, 4, 4),
+                        GoodFriday = new DateOnly(2026, 4, 3),
+                        MaundyThursday = new DateOnly(2026, 4, 2),
+                        Ascension = new DateOnly(2026, 5, 14),
+                        Pentecost = new DateOnly(2026, 5, 24)
+                    },
+                    new HolyDays
+                    {
+                        Year = 2027,
+                        AshWednesday = new DateOnly(2027, 2, 10),
+                        EasterSunday = new DateOnly(2027, 3, 28),
+                        HolySaturday = new DateOnly(2027, 3, 27),
+                        GoodFriday = new DateOnly(2027, 3, 26),
+                        MaundyThursday = new DateOnly(2027, 3, 25),
+                        Ascension = new DateOnly(2027, 5, 6),
+                        Pentecost = new DateOnly(2027, 5, 16)
+                    },
+                    new HolyDays
+                    {
+                        Year = 2028,
+                        AshWednesday = new DateOnly(2028, 3, 1),
+                        EasterSunday = new DateOnly(2028, 4, 16),
+                        HolySaturday = new DateOnly(2028, 4, 15),
+                        GoodFriday = new DateOnly(2028, 4, 14),
+                        MaundyThursday = new DateOnly(2028, 4, 13),
+                        Ascension = new DateOnly(2028, 5, 25),
+                        Pentecost = new DateOnly(2028, 6, 4)
+                    },
                 };
             }
         }
