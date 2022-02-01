@@ -1,6 +1,6 @@
 # AnglicanDailyReading
 
-This repo was created specifically to create a Anglican Daily Reading plan service that can be used by the SubSplash&reg; Mobile App solution.
+This repo was created specifically to create an Anglican Daily Reading plan service that can be used by the SubSplash&reg; Mobile App solution.
 That said, it could easily be modified to create and return any custom reading plan to the same SubSplash&reg; reading plan solution.
 
 The service outputs in <xml> in the following format to meet the SubSplash specified requirements:
