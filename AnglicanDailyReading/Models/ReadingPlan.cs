@@ -5,11 +5,11 @@ namespace AnglicanDailyReading.Models
     public class ReadingPlan
     {
         public string Title { get; set; }
-        public List<List<string>> Passages { get; set; }
+        public List<Daily> Passages { get; set; }
 
-        public ReadingPlan() 
+        public ReadingPlan()
         {
-            Passages = new List<List<string>>();
+            Passages = new List<Daily>();
         }
     }
 }
