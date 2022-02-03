@@ -5,18 +5,11 @@ namespace AnglicanDailyReading.Helpers
 {
     public sealed class ExtendedStringWriter : StringWriter
     {
-        private readonly Encoding stringWriterEncoding;
         public ExtendedStringWriter(Encoding desiredEncoding)
         {
-            stringWriterEncoding = desiredEncoding;
+            Encoding = desiredEncoding;
         }
 
-        public override Encoding Encoding
-        {
-            get
-            {
-                return stringWriterEncoding;
-            }
-        }
+        public override Encoding Encoding { get; }
     }
 }

@@ -7,6 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
+// ReSharper disable NotAccessedField.Local
+// ReSharper disable UnusedMember.Local
+#pragma warning disable IDE0051 // Remove unused private members
+#pragma warning disable IDE0052 // Remove unread private members
 
 namespace AnglicanDailyReading.Controllers
 {
@@ -14,15 +18,9 @@ namespace AnglicanDailyReading.Controllers
     [Route("")]
     public class DefaultController : ControllerBase
     {
-        private readonly ReadingPlan readingPlan = new();
+        private readonly ReadingPlan _readingPlan = new();
         private readonly ILogger<DefaultController> _logger;
-        private static DateTime Today
-        {
-            get
-            {
-                return DateTime.Today;
-            }
-        }
+        private static DateTime Today => DateTime.Today;
         private static HolyDays HolyDays
         {
             get
@@ -30,32 +28,24 @@ namespace AnglicanDailyReading.Controllers
                 return Data.AnglicanStore.HolyDays.First(d => d.Year == Today.Year);
             }
         }
-        private static int[] Days
+        private static IEnumerable<int> Days
         {
             get
             {
-                return new int[] {HolyDays.AshWednesday.DayOfYear,
+                return new[] {HolyDays.AshWednesday.DayOfYear,
                 HolyDays.MaundyThursday.DayOfYear, HolyDays.GoodFriday.DayOfYear,
                 HolyDays.HolySaturday.DayOfYear, HolyDays.EasterSunday.DayOfYear,
                 HolyDays.Ascension.DayOfYear, HolyDays.Pentecost.DayOfYear};
             }
         }
-        private static int TwoYear
-        {
-            get
-            {
-                // return 2 on even years, 1 on odd years
-                return DateTime.Today.Year % 2 == 0 ? 2 : 1;
-            }
-        }
-        private static string ThreeYear
-        {
-            get
-            {
-                // return A on years divisible by 3, then B then C
-                return DateTime.Today.Year % 3 == 0 ? "A" : DateTime.Today.Year % 3 == 1 ? "B" : "C";
-            }
-        }
+        
+        // return 2 on even years, 1 on odd years
+        private static int TwoYear =>
+            DateTime.Today.Year % 2 == 0 ? 2 : 1;
+
+        // return A on years divisible by 3, then B then C
+        private static string ThreeYear =>
+            DateTime.Today.Year % 3 == 0 ? "A" : DateTime.Today.Year % 3 == 1 ? "B" : "C";
 
         public DefaultController(ILogger<DefaultController> logger)
         {
@@ -66,7 +56,7 @@ namespace AnglicanDailyReading.Controllers
         [Route("office")]
         public ContentResult Office()
         {
-            readingPlan.Passages.AddRange(
+            _readingPlan.Passages.AddRange(
                 Data.AnglicanStore.Office
             );
 
@@ -78,10 +68,10 @@ namespace AnglicanDailyReading.Controllers
                 CloseOutput = false
             };
 
-            string xml = "";
+            string xml;
             using (var sww = new ExtendedStringWriter(Encoding.UTF8))
             {
-                using (XmlWriter writer = XmlWriter.Create(sww, settings))
+                using (var writer = XmlWriter.Create(sww, settings))
                 {
                     //writer.WriteStartDocument();
                     writer.WriteStartElement("plan");
@@ -89,7 +79,7 @@ namespace AnglicanDailyReading.Controllers
                     writer.WriteValue("Anglican Daily Office");
                     writer.WriteEndElement();
                     int i = 1;
-                    readingPlan.Passages.ForEach(x =>
+                    _readingPlan.Passages.ForEach(x =>
                     {
                         writer.WriteStartElement("reading");
                         writer.WriteStartElement("day");
@@ -136,7 +126,7 @@ namespace AnglicanDailyReading.Controllers
         [Route("twoyear/office")]
         public ContentResult TwoYearOffice()
         {
-            readingPlan.Passages.AddRange(
+            _readingPlan.Passages.AddRange(
                 Data.AnglicanStore.Office
             );
 
@@ -148,10 +138,10 @@ namespace AnglicanDailyReading.Controllers
                 CloseOutput = false
             };
 
-            string xml = "";
+            string xml;
             using (var sww = new ExtendedStringWriter(Encoding.UTF8))
             {
-                using (XmlWriter writer = XmlWriter.Create(sww, settings))
+                using (var writer = XmlWriter.Create(sww, settings))
                 {
                     //writer.WriteStartDocument();
                     writer.WriteStartElement("plan");
@@ -159,7 +149,7 @@ namespace AnglicanDailyReading.Controllers
                     writer.WriteValue("Anglican Daily Office");
                     writer.WriteEndElement();
                     int i = 1;
-                    readingPlan.Passages.ForEach(x =>
+                    _readingPlan.Passages.ForEach(x =>
                     {
                         writer.WriteStartElement("reading");
                         writer.WriteStartElement("day");
@@ -212,7 +202,7 @@ namespace AnglicanDailyReading.Controllers
         [Route("psalter")]
         public ContentResult Psalter()
         {
-            readingPlan.Passages.AddRange(
+            _readingPlan.Passages.AddRange(
                 Data.AnglicanStore.Office
             );
 
@@ -224,10 +214,10 @@ namespace AnglicanDailyReading.Controllers
                 CloseOutput = false
             };
 
-            string xml = "";
+            string xml;
             using (var sww = new ExtendedStringWriter(Encoding.UTF8))
             {
-                using (XmlWriter writer = XmlWriter.Create(sww, settings))
+                using (var writer = XmlWriter.Create(sww, settings))
                 {
                     //writer.WriteStartDocument();
                     writer.WriteStartElement("plan");
@@ -235,7 +225,7 @@ namespace AnglicanDailyReading.Controllers
                     writer.WriteValue("Anglican 60 Day Psalter");
                     writer.WriteEndElement();
                     int i = 1;
-                    readingPlan.Passages.ForEach(x =>
+                    _readingPlan.Passages.ForEach(x =>
                     {
                         writer.WriteStartElement("reading");
                         writer.WriteStartElement("day");
