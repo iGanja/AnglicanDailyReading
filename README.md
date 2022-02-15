@@ -4,7 +4,8 @@ This repo was created specifically to create an Anglican Daily Reading plan serv
 That said, it could easily be modified to create and return any custom reading plan to the same SubSplash&reg; reading plan solution.
 
 The service outputs in <xml> in the following format to meet the SubSplash specified requirements:
-```<plan>
+```
+<plan>
 <title></title>
 <reading>
 <day></day>
