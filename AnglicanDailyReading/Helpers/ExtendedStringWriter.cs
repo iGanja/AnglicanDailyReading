@@ -3,13 +3,8 @@ using System.Text;
 
 namespace AnglicanDailyReading.Helpers
 {
-    public sealed class ExtendedStringWriter : StringWriter
+    public sealed class ExtendedStringWriter(Encoding desiredEncoding) : StringWriter
     {
-        public ExtendedStringWriter(Encoding desiredEncoding)
-        {
-            Encoding = desiredEncoding;
-        }
-
-        public override Encoding Encoding { get; }
+        public override Encoding Encoding { get; } = desiredEncoding;
     }
 }

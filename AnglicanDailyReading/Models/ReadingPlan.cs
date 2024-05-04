@@ -9,7 +9,7 @@ namespace AnglicanDailyReading.Models
 
         public ReadingPlan()
         {
-            Passages = new List<Daily>();
+            Passages = [];
         }
     }
 }

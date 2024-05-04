@@ -12,5 +12,6 @@ namespace AnglicanDailyReading.Models
         public DateOnly EasterSunday { get; set; }
         public DateOnly Ascension { get; set; }
         public DateOnly Pentecost { get; set; }
+        public DateOnly February29 { get; set; }
     }
 }

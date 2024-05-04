@@ -216,13 +216,14 @@ namespace AnglicanDailyReading.Data
                     new HolyDays
                     {
                         Year = 2024,
-                        AshWednesday = new DateOnly(2023, 2, 14),
-                        EasterSunday = new DateOnly(2023, 3, 31),
-                        HolySaturday = new DateOnly(2023, 4, 30),
-                        GoodFriday = new DateOnly(2023, 4, 29),
-                        MaundyThursday = new DateOnly(2023, 4, 28),
-                        Ascension = new DateOnly(2023, 5, 10),
-                        Pentecost = new DateOnly(2023, 5, 20)
+                        AshWednesday = new DateOnly(2024, 2, 14),
+                        February29 = new DateOnly(2024, 2, 29),
+                        EasterSunday = new DateOnly(2024, 3, 31),
+                        HolySaturday = new DateOnly(2024, 4, 30),
+                        GoodFriday = new DateOnly(2024, 4, 29),
+                        MaundyThursday = new DateOnly(2024, 4, 28),
+                        Ascension = new DateOnly(2024, 5, 10),
+                        Pentecost = new DateOnly(2024, 5, 20)
                     },
                     new HolyDays
                     {
@@ -260,6 +261,7 @@ namespace AnglicanDailyReading.Data
                     new HolyDays
                     {
                         Year = 2028,
+                        February29 = new DateOnly(2028, 2, 29),
                         AshWednesday = new DateOnly(2028, 3, 1),
                         EasterSunday = new DateOnly(2028, 4, 16),
                         HolySaturday = new DateOnly(2028, 4, 15),

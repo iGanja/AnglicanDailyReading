@@ -16,10 +16,10 @@ namespace AnglicanDailyReading.Controllers
 {
     [ApiController]
     [Route("")]
-    public class DefaultController : ControllerBase
+    public class DefaultController(ILogger<DefaultController> logger) : ControllerBase
     {
         private readonly ReadingPlan _readingPlan = new();
-        private readonly ILogger<DefaultController> _logger;
+        private readonly ILogger<DefaultController> _logger = logger;
         private static DateTime Today => DateTime.Today;
         private static HolyDays HolyDays
         {
@@ -28,17 +28,11 @@ namespace AnglicanDailyReading.Controllers
                 return Data.AnglicanStore.HolyDays.First(d => d.Year == Today.Year);
             }
         }
-        private static IEnumerable<int> Days
-        {
-            get
-            {
-                return new[] {HolyDays.AshWednesday.DayOfYear,
+        private static IEnumerable<int> Days => [HolyDays.AshWednesday.DayOfYear,
                 HolyDays.MaundyThursday.DayOfYear, HolyDays.GoodFriday.DayOfYear,
                 HolyDays.HolySaturday.DayOfYear, HolyDays.EasterSunday.DayOfYear,
-                HolyDays.Ascension.DayOfYear, HolyDays.Pentecost.DayOfYear};
-            }
-        }
-        
+                HolyDays.Ascension.DayOfYear, HolyDays.Pentecost.DayOfYear];
+
         // return 2 on even years, 1 on odd years
         private static int TwoYear =>
             DateTime.Today.Year % 2 == 0 ? 2 : 1;
@@ -47,11 +41,6 @@ namespace AnglicanDailyReading.Controllers
         private static string ThreeYear =>
             DateTime.Today.Year % 3 == 0 ? "A" : DateTime.Today.Year % 3 == 1 ? "B" : "C";
 
-        public DefaultController(ILogger<DefaultController> logger)
-        {
-            _logger = logger;
-        }
-
         [HttpGet]
         [Route("office")]
         public ContentResult Office()
@@ -59,6 +48,11 @@ namespace AnglicanDailyReading.Controllers
             _readingPlan.Passages.AddRange(
                 Data.AnglicanStore.Office
             );
+
+            if (HolyDays.February29 != DateOnly.MinValue)
+            {
+                _readingPlan.Passages.Insert(59, Data.AnglicanStore.February29);
+            }
 
             XmlWriterSettings settings = new()
             {
@@ -129,6 +123,11 @@ namespace AnglicanDailyReading.Controllers
             _readingPlan.Passages.AddRange(
                 Data.AnglicanStore.Office
             );
+
+            if (HolyDays.February29 != DateOnly.MinValue)
+            {
+                _readingPlan.Passages.Insert(59, Data.AnglicanStore.February29);
+            }
 
             XmlWriterSettings settings = new()
             {
@@ -205,6 +204,11 @@ namespace AnglicanDailyReading.Controllers
             _readingPlan.Passages.AddRange(
                 Data.AnglicanStore.Office
             );
+
+            if (HolyDays.February29 != DateOnly.MinValue)
+            {
+                _readingPlan.Passages.Insert(59, Data.AnglicanStore.February29);
+            }
 
             XmlWriterSettings settings = new()
             {
