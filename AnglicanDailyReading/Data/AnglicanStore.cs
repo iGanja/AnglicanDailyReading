@@ -222,8 +222,8 @@ namespace AnglicanDailyReading.Data
                         HolySaturday = new DateOnly(2024, 4, 30),
                         GoodFriday = new DateOnly(2024, 4, 29),
                         MaundyThursday = new DateOnly(2024, 4, 28),
-                        Ascension = new DateOnly(2024, 5, 10),
-                        Pentecost = new DateOnly(2024, 5, 20)
+                        Ascension = new DateOnly(2024, 5, 9),
+                        Pentecost = new DateOnly(2024, 5, 19)
                     },
                     new HolyDays
                     {
@@ -2296,7 +2296,7 @@ namespace AnglicanDailyReading.Data
                         {
                             "Psalm 33",
                             "Job 41",
-                            "1 John 1:1-26"
+                            "1 John 1:1-2:6"
                         }
                     },
                     new Daily //5/14
