@@ -4281,7 +4281,7 @@ namespace AnglicanDailyReading.Data
                         {
                             "Psalm 58",
                             "Psalm 60",
-                            "Zachariah 1",
+                            "Zechariah 1",
                             "Matthew 15:29-16:12"
                         }
                     },
@@ -4296,7 +4296,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 63-64",
-                            "Zachariah 2",
+                            "Zechariah 2",
                             "Matthew 16:13-28"
                         }
                     },
@@ -4312,7 +4312,7 @@ namespace AnglicanDailyReading.Data
                         {
                             "Psalm 65",
                             "Psalm 67",
-                            "Zachariah 3",
+                            "Zechariah 3",
                             "Matthew 17:1-23"
                         }
                     },
@@ -4327,7 +4327,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 68:19-36",
-                            "Zachariah 4",
+                            "Zechariah 4",
                             "Matthew 17:24-18:14"
                         }
                     },
@@ -4342,7 +4342,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 68:19-37",
-                            "Zachariah 5",
+                            "Zechariah 5",
                             "Matthew 18:15-35"
                         }
                     },
@@ -4358,7 +4358,7 @@ namespace AnglicanDailyReading.Data
                         {
                             "Psalm 70",
                             "Psalm 72",
-                            "Zachariah 6",
+                            "Zechariah 6",
                             "Matthew 19:1-15"
                         }
                     },
@@ -4373,7 +4373,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 73",
-                            "Zachariah 7",
+                            "Zechariah 7",
                             "Matthew 19:16-20:16"
                         }
                     },
@@ -4388,7 +4388,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 77",
-                            "Zachariah 8",
+                            "Zechariah 8",
                             "Matthew 20:17-34"
                         }
                     },
@@ -4404,7 +4404,7 @@ namespace AnglicanDailyReading.Data
                         {
                             "Psalm 79",
                             "Psalm 82",
-                            "Zachariah 9",
+                            "Zechariah 9",
                             "Matthew 21:1-22"
                         }
                     },
@@ -4419,7 +4419,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 78:19-40",
-                            "Zachariah 10",
+                            "Zechariah 10",
                             "Matthew 21:23-46"
                         }
                     },
@@ -4434,7 +4434,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 80",
-                            "Zachariah 11",
+                            "Zechariah 11",
                             "Matthew 22:1-33"
                         }
                     },
@@ -4449,7 +4449,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 83",
-                            "Zachariah 12",
+                            "Zechariah 12",
                             "Matthew 22:34-23:12"
                         }
                     },
@@ -4464,7 +4464,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 85",
-                            "Zachariah 13",
+                            "Zechariah 13",
                             "Matthew 23:13-39"
                         }
                     },
@@ -4479,7 +4479,7 @@ namespace AnglicanDailyReading.Data
                         Evening = new List<string>
                         {
                             "Psalm 88",
-                            "Zachariah 14",
+                            "Zechariah 14",
                             "Matthew 24:1-28"
                         }
                     },
