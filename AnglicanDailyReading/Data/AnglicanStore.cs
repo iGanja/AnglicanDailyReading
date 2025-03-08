@@ -1272,7 +1272,6 @@ namespace AnglicanDailyReading.Data
                         Morning = new List<string>
                         {
                             "Psalm 12-14",
-                            "Psalm 11",
                             "Exodus 14",
                             "Matthew 16:13-28"
                         },
