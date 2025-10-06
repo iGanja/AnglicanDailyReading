@@ -6,50 +6,38 @@ namespace AnglicanDailyReading.Data
 {
     public static class AnglicanStore
     {
-        public static Daily February29
+        public static Daily February29 => new()
         {
-            get
-            {
-                return new Daily
-                {
-                    Morning = new List<string>
-                    {
+            Morning =
+                    [
                         "Psalm 90",
                         "2 Kings 2",
                         "Luke 24:44-53"
-                    },
-                    Evening = new List<string>
-                    {
+                    ],
+            Evening =
+                    [
                         "Psalm 104",
                         "Joel 2",
                         "2 Peter 3"
-                    }
-                };
-            }
-        }
+                    ]
+        };
 
-        public static Daily AshWednesday
+        public static Daily AshWednesday => new()
         {
-            get
-            {
-                return new Daily
-                {
-                    Morning = new List<string>
-                    {
+            Morning =
+                    [
                         "Psalm 38",
                         "Isaiah 58:1-12",
                         "Luke 18:9-14"
-                    },
-                    Evening = new List<string>
-                    {
+                    ],
+            Evening =
+                    [
                         "Psalm 6",
                         "Psalm 32",
                         "Jonah 3",
                         "1 Corinthians 9:24-27"
-                    }
-                };
-            }
-        }
+                    ]
+        };
 
         public static Daily MaundyThursday
         {
@@ -172,7 +160,7 @@ namespace AnglicanDailyReading.Data
                     Morning = new List<string>
                     {
                         "Psalm 48",
-                        "Isiah 11",
+                        "Isaiah 11",
                         "John 16:1-15"
                     },
                     Evening = new List<string>
@@ -2744,7 +2732,7 @@ namespace AnglicanDailyReading.Data
                         Morning = new List<string>
                         {
                             "Psalm 105:1-22",
-                            "Joshaua 9",
+                            "Joshua 9",
                             "Luke 23:1-25"
                         },
                         Evening = new List<string>
@@ -2759,7 +2747,7 @@ namespace AnglicanDailyReading.Data
                         Morning = new List<string>
                         {
                             "Psalm 106:1-18",
-                            "Joshaua 10",
+                            "Joshua 10",
                             "Luke 23:26-49"
                         },
                         Evening = new List<string>
@@ -2774,7 +2762,7 @@ namespace AnglicanDailyReading.Data
                         Morning = new List<string>
                         {
                             "Psalm 107:1-22",
-                            "Joshaua 14",
+                            "Joshua 14",
                             "Luke 23:50-24:12"
                         },
                         Evening = new List<string>
@@ -2790,7 +2778,7 @@ namespace AnglicanDailyReading.Data
                         {
                             "Psalm 108",
                             "Psalm 110",
-                            "Joshaua 22",
+                            "Joshua 22",
                             "Luke 24:13-53"
                         },
                         Evening = new List<string>
@@ -2805,7 +2793,7 @@ namespace AnglicanDailyReading.Data
                         Morning = new List<string>
                         {
                             "Psalm 111-112",
-                            "Joshaua 23",
+                            "Joshua 23",
                             "Galatians 1"
                         },
                         Evening = new List<string>
@@ -2820,7 +2808,7 @@ namespace AnglicanDailyReading.Data
                         Morning = new List<string>
                         {
                             "Psalm 115",
-                            "Joshaua 24",
+                            "Joshua 24",
                             "Galatians 2"
                         },
                         Evening = new List<string>
@@ -4412,7 +4400,7 @@ namespace AnglicanDailyReading.Data
                         Morning = new List<string>
                         {
                             "Psalm 78:1-18",
-                            "2 Cronicles 16",
+                            "2 Chronicles 16",
                             "James 4"
                         },
                         Evening = new List<string>
