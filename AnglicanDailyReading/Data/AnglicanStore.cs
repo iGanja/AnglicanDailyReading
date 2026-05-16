@@ -1876,7 +1876,7 @@ namespace AnglicanDailyReading.Data
                         {
                             "Psalm 109",
                             "Job 14",
-                            "Hebrews 5:1-6:20"
+                            "Hebrews 5:11-6:20"
                         }
                     },
                     new Daily //4/17
